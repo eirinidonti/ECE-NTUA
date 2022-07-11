@@ -1,0 +1,82 @@
+LXI B,0032H ;used for delay (0.05 sec)
+MVI A,10H ;5 right-most 7-segment displays should be empty 
+STA 0B04H
+STA 0B03H
+STA 0B02H
+STA 0B01H
+STA 0B00H 
+
+START:
+	MVI A,0DH ;interrupt mask in order to allow RST 6.5
+	SIM
+	EI ;enable interrupts
+	
+WAIT:
+	JMP WAIT
+	
+INTR_ROUTINE:
+	POP H ;reduce stack
+	MVI D,2DH ;45 sec (counting) 
+	MVI E,00H ;E counts up to 5 to reverse lights every 5*0.05 = 0.25sec
+	MVI H,00H ;H counts up to 4 light reverses to reduce D by 1(1sec)
+	MVI L,FFH ;L contains current light condition (00 to FF)
+	EI ;enable interrupts to allow timer renewing
+	
+LIGHTS:
+	INR E
+	MOV A,E
+	CPI 05H
+	JNZ SKIP
+
+
+MOV A,L
+CMA
+MOV L,A
+STA 3000H
+INR H ;increase H every 5 loops
+MVI E,00H
+MOV A,H
+CPI 04H
+JNZ SKIP
+
+
+DCR D ;1 sec has passed
+MVI H,00H
+MOV A,D
+CPI 00H ;if D is 0, 45 sec have passed 
+JZ START
+
+SKIP:
+CALL DELB
+PUSH H ;store HL
+MOV A,D ;remaining time (in sec)
+MVI B,00H
+
+;number in decimal form (A:ones, B:tens)
+SUB10:
+CPI 0AH
+JC FINISH
+SUI 0AH
+INR B
+JMP SUB10
+
+FINISH:
+STA 0B04H ;print ones in left-most 7-segment display
+
+
+MOV A,B
+STA 0B05H ;print tens in second left-most 7-segment display
+
+
+PUSH D ;store DE
+LXI D,0B00H ;used for STDM
+CALL STDM
+CALL DCD
+MOV D,B
+MOV E,C ;restore D and E
+LXI B,0032H ;used for delay (0.05 sec)
+POP D ;restore DE
+POP H ;restore HL
+JMP LIGHTS
+	
+END

@@ -1,0 +1,77 @@
+;EXERCISE 1
+
+;a
+
+START:
+	IN 10H
+	MVI A,FFH   ;A valus wew want to store
+	LXI H,0900H ;L=00H and H=09H
+
+SAVE:
+	MOV M,A   ;store number in memory
+	INX H     ;HL=HL+1 
+	DCR A     ;A=A-1 
+	CPI 00H   ;if A>0 move to flag save
+	JNZ SAVE 
+
+;b
+
+	LXI D,0000H ;counter DE -> (if 0 digit (CY=0) -> increment DE)
+	MVI C,FFH ;C = 1111 1111
+
+ZEROS:
+	MVI B,00H 
+
+COUNT_ZEROS:
+	MOV A,C ;store number
+	RRC
+	JC NO_ZERO ;if the digit is 1 (CY=1), -> don't increase the counter -> go to NO_ZERO
+	INX D ;found 0 digit (CY=0) -> increment counter DE
+
+NO_ZERO:
+	MOV C,A
+	INR B
+	MOV A,B
+	CPI 08H ;if there are other digits -> check the next one
+	JNZ COUNT_ZEROS ;else go to COUNT_ZEROS
+	MOV A,C
+	CPI 00H ;check if it is the last number
+	JZ ZEROS_FINISHED ;if it is the last -> go to ZEROS_FINISHED
+	DCR C ;else go to the next number
+	JMP ZEROS ;do the same procedure for this number
+
+ZEROS_FINISHED: 
+	;print D or E
+	;MOV A,D
+	;MOV A,E
+	CMA
+	STA 3000H
+
+
+;c
+
+	MVI C,00H ;counter -> if 20H<=A<=70H -> counter++
+	MVI A,FFH
+
+CHECK:
+	CPI 20H ;compare with 20
+	JC FALSE_CONDITION ;if A<20 go to FALSE_CONDITION
+	CPI 71H ;compare with 71
+	JNC FALSE_CONDITION ;if A>70 (A>=71) go to FALSE_CONDITION
+	INR C ;20<=A<=70 -> increment counter C
+
+FALSE_CONDITION:
+	CPI 00H ;check if the number is the last one
+	JZ TOTAL_NUMBERS ;if it is the last -> go to TOTAL_NUMBERS
+	DCR A ;else go to the next number 
+	JMP CHECK ;do the same procedure for this number
+
+TOTAL_NUMBERS:
+	;print C
+	MOV A,C
+	CMA
+	STA 3000H
+
+RST 1
+
+END
