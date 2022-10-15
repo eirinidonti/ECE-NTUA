@@ -1,0 +1,67 @@
+# Eirini Donti 03119839
+
+.data
+
+    input:  .asciiz "n = "
+
+    output: .asciiz "\nfib(n) = "
+
+    n:       .word 0
+    result:  .word 0
+
+.text
+
+    main:
+
+         li $v0, 4           # call to print input message
+         la $a0, input       
+         syscall
+
+         li $v0, 5           # call to read integer n
+         syscall
+
+         sw $v0, n
+         lw $a0, n           
+         
+         jal fib             # call fib function
+
+         sw $v0, result      
+
+         li $v0, 4           # call to print output message
+         la $a0, output
+         syscall
+
+         li $v0, 1           # call to print integer n
+         lw $a0, result    
+         syscall
+
+         li $v0, 10          # call to end program
+         syscall             
+
+   fib:
+        subu $sp, $sp, 8    # push registers $ra, $s0
+        sw   $ra, ($sp)
+        sw   $s0, 4($sp)
+
+        move $v0, $a0       
+        beq $a0, 0, exit    # if n = 0 exit
+        beq $a0, 1, exit    # else if n = 1 exit   
+
+                            #else
+        move $s0, $a0        
+        sub $a0, $a0, 1     # n = n - 1;
+        jal fib             # call fib(n-1)
+
+        move $a0, $s0
+        sub $a0, $a0, 2     # n = n - 2;
+        move $s0, $v0       # save fib(n-1)
+        jal fib             # call fib(n-2)
+
+        add $v0, $s0, $v0   # fib(n-1) + fib(n-2)
+
+   exit: 
+        lw $ra, ($sp)       
+        lw $s0, 4($sp)
+        addu $sp, $sp, 8    # clear stack
+        
+        jr $ra

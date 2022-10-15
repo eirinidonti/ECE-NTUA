@@ -1,0 +1,37 @@
+# Eirini Donti 03119839
+
+.data 
+
+  input: .asciiz "electronical"
+  
+  output: .asciiz "String Length: "
+
+.text
+
+  main: 
+          la $a0, input     # load address of input string
+          jal strlen        # call strlen function
+         
+          li $v0, 4         # call to print output message
+          la $a0, output    
+          syscall          
+
+          li $v0, 1         # call to print length of the string
+          move $a0, $t0
+          syscall          
+          
+          addi $v0, $0, 10  # exit program
+          syscall
+
+  strlen: 
+         li $t0, 0          # int i = 0;   
+     l1: 
+         lb $t1, 0($a0)     # load character to $t1
+         beqz $t1, exit     # if null character => exit
+         addi $a0, $a0, 1   # increase string pointer
+         addi $t0, $t0, 1   # i = i + 1;
+         j l1               # jump l1
+    
+     exit:
+         jr $ra           
+      
