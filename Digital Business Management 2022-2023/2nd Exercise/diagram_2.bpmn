@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1s8h1zv" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.11.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <bpmn:process id="e-shop" isExecutable="true">
+    <bpmn:extensionElements />
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1tfpygl</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Activity_0721qks" name="ΣΥΛΛΟΓΗ ΠΡΟΙΟΝΤΩΝ" camunda:assignee="03119839 03119839" camunda:candidateGroups="camunda-admin">
+      <bpmn:extensionElements />
+      <bpmn:incoming>Flow_1tfpygl</bpmn:incoming>
+      <bpmn:outgoing>Flow_1oy65oy</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1tfpygl" sourceRef="StartEvent_1" targetRef="Activity_0721qks" />
+    <bpmn:userTask id="Activity_04bvtef" name="ΤΙΜΟΛΟΓΗΣΗ ΠΑΡΑΓΓΕΛΙΑΣ" camunda:assignee="03119839 03119839" camunda:candidateGroups="camunda-admin">
+      <bpmn:incoming>Flow_1oy65oy</bpmn:incoming>
+      <bpmn:outgoing>Flow_19ifm8u</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1oy65oy" sourceRef="Activity_0721qks" targetRef="Activity_04bvtef" />
+    <bpmn:parallelGateway id="Gateway_0ckrgfw">
+      <bpmn:incoming>Flow_19ifm8u</bpmn:incoming>
+      <bpmn:outgoing>Flow_1t010ds</bpmn:outgoing>
+      <bpmn:outgoing>Flow_0yh2qug</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sequenceFlow id="Flow_19ifm8u" sourceRef="Activity_04bvtef" targetRef="Gateway_0ckrgfw" />
+    <bpmn:userTask id="Activity_16oojzd" name="ΠΑΡΑΔΟΣΗ ΜΕ ΜΕΤΑΦΟΡΙΚΗ" camunda:assignee="03119840 03119840" camunda:candidateGroups="camunda-admin">
+      <bpmn:incoming>Flow_1t010ds</bpmn:incoming>
+      <bpmn:outgoing>Flow_1hb8ciy</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1t010ds" sourceRef="Gateway_0ckrgfw" targetRef="Activity_16oojzd" />
+    <bpmn:userTask id="Activity_1l3gxgr" name="ΕΝΗΜΕΡΩΣΗ ΠΕΛΑΤΗ" camunda:assignee="03119840 03119840" camunda:candidateGroups="camunda-admin">
+      <bpmn:incoming>Flow_0yh2qug</bpmn:incoming>
+      <bpmn:outgoing>Flow_17vu4as</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_0yh2qug" sourceRef="Gateway_0ckrgfw" targetRef="Activity_1l3gxgr" />
+    <bpmn:sequenceFlow id="Flow_17vu4as" sourceRef="Activity_1l3gxgr" targetRef="Gateway_1glxu3k" />
+    <bpmn:parallelGateway id="Gateway_1glxu3k">
+      <bpmn:incoming>Flow_17vu4as</bpmn:incoming>
+      <bpmn:incoming>Flow_1hb8ciy</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ayosea</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sequenceFlow id="Flow_1hb8ciy" sourceRef="Activity_16oojzd" targetRef="Gateway_1glxu3k" />
+    <bpmn:endEvent id="Event_1hg9dyk">
+      <bpmn:incoming>Flow_1ayosea</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1ayosea" sourceRef="Gateway_1glxu3k" targetRef="Event_1hg9dyk" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="e-shop">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="189" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0721qks_di" bpmnElement="Activity_0721qks">
+        <dc:Bounds x="270" y="167" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04bvtef_di" bpmnElement="Activity_04bvtef">
+        <dc:Bounds x="430" y="167" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0ckrgfw_di" bpmnElement="Gateway_0ckrgfw">
+        <dc:Bounds x="595" y="182" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_16oojzd_di" bpmnElement="Activity_16oojzd">
+        <dc:Bounds x="700" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1l3gxgr_di" bpmnElement="Activity_1l3gxgr">
+        <dc:Bounds x="700" y="240" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1glxu3k_di" bpmnElement="Gateway_1glxu3k">
+        <dc:Bounds x="845" y="175" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1hg9dyk_di" bpmnElement="Event_1hg9dyk">
+        <dc:Bounds x="982" y="182" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1tfpygl_di" bpmnElement="Flow_1tfpygl">
+        <di:waypoint x="215" y="207" />
+        <di:waypoint x="270" y="207" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1oy65oy_di" bpmnElement="Flow_1oy65oy">
+        <di:waypoint x="370" y="207" />
+        <di:waypoint x="430" y="207" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19ifm8u_di" bpmnElement="Flow_19ifm8u">
+        <di:waypoint x="530" y="207" />
+        <di:waypoint x="595" y="207" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1t010ds_di" bpmnElement="Flow_1t010ds">
+        <di:waypoint x="620" y="182" />
+        <di:waypoint x="620" y="120" />
+        <di:waypoint x="700" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0yh2qug_di" bpmnElement="Flow_0yh2qug">
+        <di:waypoint x="620" y="232" />
+        <di:waypoint x="620" y="280" />
+        <di:waypoint x="700" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_17vu4as_di" bpmnElement="Flow_17vu4as">
+        <di:waypoint x="800" y="280" />
+        <di:waypoint x="870" y="280" />
+        <di:waypoint x="870" y="225" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1hb8ciy_di" bpmnElement="Flow_1hb8ciy">
+        <di:waypoint x="800" y="120" />
+        <di:waypoint x="870" y="120" />
+        <di:waypoint x="870" y="175" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ayosea_di" bpmnElement="Flow_1ayosea">
+        <di:waypoint x="895" y="200" />
+        <di:waypoint x="982" y="200" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
