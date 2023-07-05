@@ -1,1 +1,0 @@
-find_sim_1(X, Y):- genre(X, G1), genre(Y, G1), X \= Y.
