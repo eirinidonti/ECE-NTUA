@@ -10,7 +10,7 @@ The course contains exercises for
 
 - _Business Process Modeling and Execution_: Explore the modeling and execution of a digital business process using Camunda tools, methodologies and analyze a specific business process. [![Camunda Modeler](https://img.shields.io/badge/-Camunda%20Modeler-%23FF4BAC?logo=camunda&logoColor=white)](https://camunda.com/download/modeler/) [![Camunda Open Source Community Platform](https://img.shields.io/badge/-Camunda%20Open%20Source-%23FF4BAC?logo=camunda&logoColor=white)](https://camunda.com/download/)
 
-- _ERP Exercise_: Engage in an exercise involving an Enterprise Resource Planning (ERP) system, perform tasks such as inventory management, order processing, financial reporting and gain hands-on experience in managing business processes within an ERP environment. [![Odoo](https://img.shields.io/badge/-Odoo-purple?logo=odoo&logoColor=white)](https://www.odoo.com/)
+- _ERP Exercise_: Engage in an exercise involving an Enterprise Resource Planning (ERP) system, perform tasks such as inventory management, order processing, financial reporting and gain hands-on experience in managing business processes within an ERP environment. [![Odoo](https://img.shields.io/badge/-Odoo-#702963?logo=odoo&logoColor=white)](https://www.odoo.com/)
 
 - _Search and Recommender Systems_: Implementation of search and recommender systems exploring the algorithms and techniques behind search engines and recommender systems for a specific application or domain.
 
