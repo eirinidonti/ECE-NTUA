@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-In the computer architecture exercises, students explore assembly programming, gaining hands-on experience (using QtSpim) in writing low-level code and understanding how instructions are executed by the processor to manipulate data and control the flow of a computer program.
+In the computer architecture exercises, students explore assembly programming, gaining hands-on experience (using QtSpim) in writing low-level code and understanding how instructions are executed by the processor to manipulate data and control the flow of a computer program. [![QtSpim](https://img.shields.io/badge/-QtSpim-41CD52?logo=qt&logoColor=white)](https://spimsimulator.sourceforge.net/)
 
 ### Authors
 ---
