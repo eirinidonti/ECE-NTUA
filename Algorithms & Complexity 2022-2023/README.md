@@ -14,7 +14,7 @@ The Lab section includes exercises depending on discussed algorithms.
 ### Authors
 ---
 
-- Eirini Donti
+- Eirini Donti (Owner)
 
 <!-- ### License
 --- -->
