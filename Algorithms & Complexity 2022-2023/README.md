@@ -9,7 +9,7 @@ Each theoretical exercise provides a clear understanding of the functionality of
     
 #### Lab
 
-The Lab section includes exercises depending on discussed algorithms. [C++](https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png)
+The Lab section includes exercises depending on discussed algorithms. [![C++](https://img.shields.io/badge/-C++-00599C?logo=c%2B%2B&logoColor=white)](https://www.cplusplus.com/)
 
 ### Authors
 ---
