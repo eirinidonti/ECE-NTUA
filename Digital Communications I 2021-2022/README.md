@@ -5,7 +5,8 @@
 ---
 #### Lab
 
-The Lab section contains exercises for  using Matlab.[![MATLAB](https://img.shields.io/badge/-MATLAB-%230076A8?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html) [![MATLAB Logo](matlab_logo.png)](https://www.mathworks.com/products/matlab.html)
+The Lab section contains exercises for  using Matlab.[![MATLAB](https://img.shields.io/badge/-MATLAB-%230076A8?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html) [![MATLAB Logo](https://www.mathworks.com/etc/designs/mathworks/img/logos/matlab_logo.png)](https://www.mathworks.com/products/matlab.html)
+
 
 Discrete-Time Signals: Explore the characteristics and properties of discrete-time signals. Students will analyze different types of signals, such as periodic, aperiodic, and digital signals, and perform operations such as sampling, quantization, and digital-to-analog conversion.
 
