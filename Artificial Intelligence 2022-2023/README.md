@@ -9,7 +9,7 @@ The AI course includes theoretical exercises that challenge students to analyze 
     
 #### Lab
 
-In the AI course lab, students actively engage in hands-on exercises to apply and reinforce their understanding of machine learning algorithms and techniques (e.g. Recommenders).
+In the AI course lab, students actively engage in hands-on exercises to apply and reinforce their understanding of machine learning algorithms and techniques (e.g. Recommenders). [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
 ### Authors
 ---
