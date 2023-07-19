@@ -9,7 +9,7 @@ Each theoretical exercise provides a clear understanding of the functionality of
     
 #### Lab
 
-The Lab section includes exercises depending on discussed algorithms.
+The Lab section includes exercises depending on discussed algorithms. [](https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png)
 
 ### Authors
 ---
