@@ -3,11 +3,11 @@
 
 ### Structure
 ---
-#### -Exercises
+#### Exercises
 
 Each theoretical exercise provides a clear understanding of the functionality of algorithms, while its complexity analysis and emphasis on correctness ensure its efficiency and accuracy in solving the given problem.
     
-#### -Lab
+#### Lab
 
 The Lab section includes exercises depending on discussed algorithms.
 
