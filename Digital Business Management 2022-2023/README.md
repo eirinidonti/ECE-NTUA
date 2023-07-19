@@ -6,7 +6,7 @@
 #### Exercises
 
 The course contains exercises for
-- _E-shop creation_: Execute the process of creating an e-commerce website, design an online store, including aspects such as product catalog, shopping cart, payment processing, and user experience optimization 
+- _E-shop creation_: Execute the process of creating an e-commerce website, design an online store, including aspects such as product catalog, shopping cart, payment processing, and user experience optimization [![Magento](https://img.shields.io/badge/-Magento-%23EE672F?logo=magento&logoColor=white)](https://magento.com/) [![VirtualBox](https://img.shields.io/badge/-VirtualBox-%231A83E5?logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
 
 - _Business Process Modeling and Execution_: Explore the modeling and execution of a digital business process using appropriate tools or methodologies and analyze a specific business process.
 
