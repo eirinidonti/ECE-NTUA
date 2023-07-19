@@ -14,7 +14,7 @@ The course contains exercises for
 
 - _Search and Recommender Systems_: Implementation of search and recommender systems exploring the algorithms and techniques behind search engines and recommender systems for a specific application or domain.
 
-- _Exercise on DISCO_: Exercise using DISCO, which is a process mining software and analyze real process data, apply process mining techniques, and gain insights into process efficiency, bottlenecks, and potential improvements within an organization.
+- _Exercise on DISCO_: Exercise using DISCO, which is a process mining software and analyze real process data, apply process mining techniques, and gain insights into process efficiency, bottlenecks, and potential improvements within an organization. [![Disco](https://img.shields.io/badge/-Disco-%238A2BE2?logo=disco&logoColor=white)](https://fluxicon.com/disco/)
 
 ### Authors
 ---
