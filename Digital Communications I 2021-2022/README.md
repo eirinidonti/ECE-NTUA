@@ -5,7 +5,7 @@
 ---
 #### Lab
 
-The Lab section contains exercises depending on ... using Matlab.[![MATLAB](https://img.shields.io/badge/-MATLAB-%23FF6600?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html)
+The Lab section contains exercises depending on ... using Matlab.[![MATLAB](https://img.shields.io/badge/-MATLAB-%230076A8?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html)
 
 ### Authors
 ---
