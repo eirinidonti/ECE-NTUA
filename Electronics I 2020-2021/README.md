@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-Exercises involve simulation and analyzation of electronic circuits discussed in the course using LTspice. [![LTspice](https://img.shields.io/badge/LTspice-Simulation-FF6600?style=flat-square&logo=LTspice&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+Exercises involve simulation and analyzation of electronic circuits discussed in course using LTspice. [![LTspice](https://img.shields.io/badge/LTspice-Simulation-FF6600?style=flat-square&logo=LTspice&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
     
 #### Project
 
