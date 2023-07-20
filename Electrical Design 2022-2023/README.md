@@ -5,7 +5,8 @@
 ---
 #### Project
 
-- [![PanelCad](https://www.ti-soft.com/el/products/software/electricalinst)]
+- [![PanelCad](https://www.ti-soft.com/el/products/software/electricalinst/badge.svg)](https://www.ti-soft.com/el/products/software/electricalinst)
+
     
 #### Lab
 
