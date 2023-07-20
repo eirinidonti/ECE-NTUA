@@ -5,11 +5,11 @@
 ---
 #### Project
 
-- [PanelCad](https://www.ti-soft.com/el/products/software/electricalinst)
+Tasks related to architectural plan, mechanic plan and electrical panel design, such as creating schematics, generating panel layout drawings, calculating wire sizes and cable lengths, implementing electrical standards using [PanelCad](https://www.ti-soft.com/el/products/software/electricalinst). 
     
 #### Lab
 
--
+Involve hands-on activities and exercises about electrical panel design and architectural planning using [PanelCad](https://www.ti-soft.com/el/products/software/electricalinst). 
 
 ### Authors
 ---
