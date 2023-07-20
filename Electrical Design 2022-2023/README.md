@@ -5,7 +5,7 @@
 ---
 #### Project
 
-Tasks related to architectural plan, mechanic plan and electrical panel design, such as creating schematics, generating panel layout drawings, calculating wire sizes and cable lengths, implementing electrical standards using [PanelCad](https://www.ti-soft.com/el/products/software/electricalinst). 
+The project involves tasks related to architectural plan, mechanic plan and electrical panel design, such as creating schematics, generating panel layout drawings, calculating wire sizes and cable lengths, implementing electrical standards using [PanelCad](https://www.ti-soft.com/el/products/software/electricalinst). 
     
 #### Lab
 
