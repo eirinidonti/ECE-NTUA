@@ -5,11 +5,12 @@
 ---
 #### Exercises
 
-- 
+Exercises involve simulation and analyzation of electronic circuits discussed in course using [![LTspice](https://img.shields.io/badge/LTspice-Simulation-FF6600?style=flat-square&logo=LTspice&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+.
     
 #### Project
 
-- 
+Project involves theoretical analysis and simulations of electronic circuits such as basic circuit simulations, AC analysis, transistor amplifiers, diode circuits and Op-Amp circuits using [![LTspice](https://img.shields.io/badge/LTspice-Simulation-FF6600?style=flat-square&logo=LTspice&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html).
 
 ### Authors
 ---
