@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-- ![Atmel Studio](https://img.shields.io/badge/Atmel%20Studio-vX.XX-blue)
+- ![Atmel Studio](https://img.shields.io/badge/Atmel%20Studio-blue)
 
 ### Authors
 ---
