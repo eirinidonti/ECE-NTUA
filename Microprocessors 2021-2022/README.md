@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-- ![Atmel Studio](https://img.shields.io/badge/Atmel%20Studio-blue)
+- [![Atmel Studio](https://img.shields.io/badge/Atmel%20Studio-blue)](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio)
 
 ### Authors
 ---
