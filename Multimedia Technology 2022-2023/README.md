@@ -6,7 +6,7 @@
 
 #### Lab
 
-The task is the creation of a simple Minesweeper game application using JavaFX. ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+The task is the creation of a simple Minesweeper game application using JavaFX. [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
 
 ### Authors
 ---
