@@ -1,2 +1,17 @@
 # Multimedia Technology 2022-2023
-> Lab for **Multimedia Technology** Course
+> Lab for **Multimedia Technology** Course (7th semester)
+
+### Structure
+---
+
+#### Lab
+
+The task is the creation of a simple Minesweeper game application using JavaFX. ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+### Authors
+---
+
+- Eirini Donti (Owner)
+
+<!-- ### License
+--- -->
