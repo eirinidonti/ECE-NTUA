@@ -1,5 +1,5 @@
 # Signals & Systems 2020-2021
-> Lab for **Signals & Systems** Course (3rd semester)
+> Project for **Signals & Systems** Course (3rd semester)
 
 ### Structure
 ---
