@@ -1,5 +1,5 @@
 # Microprocessors 2021-2022
-> Lab and Exercises for **Microprocessors** Course (6th semester)
+> Exercises for **Microprocessors** Course (6th semester)
 
 ### Structure
 ---
