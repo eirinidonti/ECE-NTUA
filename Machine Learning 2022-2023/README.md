@@ -1,5 +1,5 @@
 # Machine Learning 2022-2023
-> Lab and Exercises for **Machine Learning** Course (7th semester)
+> Exercises and Lab for **Machine Learning** Course (7th semester)
 
 ### Structure
 ---
