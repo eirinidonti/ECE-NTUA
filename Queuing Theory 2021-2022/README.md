@@ -5,7 +5,7 @@
 ---
 #### Lab
 
-The Lab section involves [![Octave](https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683)(https://octave.org/)]
+The Lab section involves [![Octave](https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683)](https://octave.org/)
 
 ### Authors
 ---
