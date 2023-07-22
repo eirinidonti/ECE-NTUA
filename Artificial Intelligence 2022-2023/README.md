@@ -18,4 +18,3 @@ In the AI course lab, students actively engage in hands-on exercises to apply an
 
 <!-- ### License
 --- -->
-
