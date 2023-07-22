@@ -1,5 +1,5 @@
 # Electrical Design 2022-2023
-> Project and Lab for **Electrical Design** Course (8th semester)
+> Project and Lab for **Electrical Design** Course (7th semester)
 
 ### Structure
 ---
