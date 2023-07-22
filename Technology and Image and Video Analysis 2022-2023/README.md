@@ -6,7 +6,7 @@
 
 #### Lab
 
-The Lab section involves exercises about Gaussian and Laplacian Pyramid (1st Lab Exercise), convolutional neural network (CNN) with CIFAR-100 dataset, TFRecord (2nd Lab Exercise),  multi-object detection and tracking (3rd Lab Exercise). [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+The Lab section involves exercises about Gaussian and Laplacian Pyramid (1st Lab), convolutional neural network (CNN) with CIFAR-100 dataset, TFRecord (2nd Lab),  multi-object detection and tracking (3rd Lab). [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
 ### Authors
 ---
