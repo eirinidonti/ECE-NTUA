@@ -25,7 +25,7 @@ We consider a menubar, placed at the top of the screen, in which there is the Me
 The first game starts after we load a valid description file. The game features two levels "Easy" and "Hard":
 
 **"Easy" Level**:
-![image](https://github.com/eirinidonti/ECE-NTUA/assets/61821015/092eed1f-4c11-4236-b293-50bb4508d42d)
+![image](https://github.com/eirinidonti/ECE-NTUA/assets/61821015/dd508f00-d73c-469d-9bab-6d0455072494)
 
 **"Hard" Level**:
 ![image](https://github.com/eirinidonti/ECE-NTUA/assets/61821015/b00f5356-1df5-4da3-8c3e-df4ce35c7750)
