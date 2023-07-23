@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-The course contains exercises for linear and ridge regression, Gaussian distribution, Bayes classifier, multiLayer Perceptron, Support Vector Machines, Kernels, decision trees (1st Exercise Group), machine learning theory, comparison of k-Means and Fuzzy c-Means algorithms, hierarchical clustering, theory of PCA and SVD, numerical application of PCA and reinforcement learning (2nd Exercise Group).
+The course contains exercises for linear and ridge regression, Gaussian distribution, Bayes classifier, Multilayer Perceptron, Support Vector Machines, Kernels, decision trees (1st Exercise Group), machine learning theory, comparison of k-Means and Fuzzy c-Means algorithms, hierarchical clustering, theory of PCA and SVD, numerical application of PCA and reinforcement learning (2nd Exercise Group).
     
 #### Lab
 
