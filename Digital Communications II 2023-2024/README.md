@@ -11,7 +11,7 @@ The Lab section contains exercises using Matlab: [![MATLAB](https://img.shields.
 
 - _BCH Code_: Code creation for the appropriate circular code BCH (15,k) including three correctable errors with emulation of BCH encoding and decoding processes.
   
--_Reed-Solomon Codification_: Application of Reed-Solomon decoder based on Euclid's GCD calculation algorithm/autoregression technique and includes Reed-Solomon encoder in the ATSC digital television broadcast system.
+- _Reed-Solomon Codification_: Application of Reed-Solomon decoder based on Euclid's GCD calculation algorithm/autoregression technique and includes Reed-Solomon encoder in the ATSC digital television broadcast system.
 
 ### Authors
 ---
