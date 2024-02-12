@@ -5,7 +5,7 @@
 ---
 #### Exercises
 
-The course contains exercises about entropy, relative entropy, mutual information, asymptotic equidistribution property, gambling, data compression, channel capacity, differential entropy, Gaussian channel, rate-distortion theory and statistics. [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+The course Information Theory contains exercises about entropy, relative entropy, mutual information, asymptotic equidistribution property, gambling, data compression, channel capacity, differential entropy, Gaussian channel, rate-distortion theory and statistics. [![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 ### Authors
 ---
 
